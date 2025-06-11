@@ -23,7 +23,7 @@ def generate_unique_addition_samples(num_samples: int, existing_samples: set = N
     
     # 2桁+2桁の全組み合わせ数は約8100通り。
     # 要求サンプル数が多すぎる場合の警告のため、試行回数に上限を設ける。
-    max_attempts = num_samples * 25 # 十分な試行回数を設定 (以前より少し増やしました)
+    max_attempts = num_samples * 25 # 十分な試行回数を設定
     attempts = 0
 
     while len(new_samples) < num_samples and attempts < max_attempts:
