@@ -11,23 +11,23 @@ import copy
 from transformer import Seq2SeqTransformer
 
 class Config:
-    DATA_PATH = 'data/addition_train_dataset.csv' # 修正: generate_data.py に合わせる
-    TEST_DATA_PATH = 'data/addition_test_dataset.csv' # 修正: generate_data.py に合わせる
+    DATA_PATH = 'data/addition_train_dataset.csv'
+    TEST_DATA_PATH = 'data/addition_test_dataset.csv'
     TRAIN_RATIO = 0.8
     MAX_LEN = 20
-    D_MODEL = 1024       # ユーザーがアップロードしたファイルの値に合わせる
-    NHEAD = 16           # ユーザーがアップロードしたファイルの値に合わせる
-    NUM_ENCODER_LAYERS = 6 # ユーザーがアップロードしたファイルの値に合わせる
-    NUM_DECODER_LAYERS = 6 # ユーザーがアップロードしたファイルの値に合わせる
-    DIM_FEEDFORWARD = 4096 # ユーザーがアップロードしたファイルの値に合わせる
-    DROPOUT_P = 0.3     # ユーザーがアップロードしたファイルの値に合わせる
+    D_MODEL = 1024
+    NHEAD = 16
+    NUM_ENCODER_LAYERS = 6
+    NUM_DECODER_LAYERS = 6
+    DIM_FEEDFORWARD = 4096
+    DROPOUT_P = 0.3
     LEARNING_RATE = 0.0001
-    BATCH_SIZE = 64     # ユーザーがアップロードしたファイルの値に合わせる
-    NUM_EPOCHS = 200    # ユーザーがアップロードしたファイルの値に合わせる
+    BATCH_SIZE = 64
+    NUM_EPOCHS = 200
     SEED = 42
     MODEL_SAVE_PATH = 'seq2seq_transformer_addition_best.pth'
-    EARLY_STOPPING_PATIENCE = 200 # Patienceの値を調整しやすくする (例: 10)
-    LOG_FILE_PATH = 'log/training_log_model_large.csv' # 学習ログのファイルパスを追加
+    EARLY_STOPPING_PATIENCE = 200
+    LOG_FILE_PATH = 'log/training_log_model_large.csv'
 
 def seed_everything(seed):
     random.seed(seed)
