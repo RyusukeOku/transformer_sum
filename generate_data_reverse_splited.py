@@ -22,7 +22,7 @@ def generate_unique_addition_samples(num_samples: int, existing_samples: set = N
     
     new_samples = set()
     
-    max_attempts = num_samples * 30  # 試行回数を少し増やしました (ペア生成のため)
+    max_attempts = num_samples * 30
     attempts = 0
 
     while len(new_samples) < num_samples and attempts < max_attempts:
