@@ -173,9 +173,3 @@ if __name__ == "__main__":
     # combined_filename = "addition_curriculum_combined_dataset.csv"
     # save_dataset_to_csv(all_generated_samples, combined_filename, shuffle=True)
     # print(f"\nTotal unique samples generated across all stages: {len(all_generated_samples)}")
-
-    # 以前のA+BとB+Aを生成する機能や、分解形式での出力は、
-    # この generate_addition_problems 関数内で expression の作り方を変更することで対応可能です。
-    # 今回は、まず難易度別のデータ生成に焦点を当てています。
-    # 例えば、A+BとB+Aの両方を含めるなら、generate_addition_problems内で
-    # sample_pair1 と sample_pair2 を生成し、それぞれ条件チェックして追加する形になります。
