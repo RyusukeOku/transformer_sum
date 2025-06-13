@@ -556,7 +556,7 @@ if __name__ == '__main__':
         print("\nNo final test data loaded. Skipping final test evaluation.")
     
     print("\n--- Inference Example (with best model) ---")
-    # (推論例のコードは変更なし)
+    
     model.eval()
     with torch.no_grad():
         test_eq = "25+30=" 
